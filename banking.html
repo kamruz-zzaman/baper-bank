@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <section>
+        <div class="w-3/4 mx-auto mt-7 grid grid-cols-3 gap-4">
+            <div class="bg-green-300 p-10 text-center">
+                <h1 class="text-5xl">Deposit</h1>
+                <h1 class="text-3xl mt-4 font-bold">$<span id="totalDeposite">00</span></h1>
+            </div>
+            <div class="bg-yellow-300 p-10 text-center">
+                <h1 class="text-5xl">Withdraw</h1>
+                <h1 class="text-3xl mt-4 font-bold">$<span id="totalWithdraw">00</span></h1>
+            </div>
+            <div class="bg-blue-300 p-10 text-center">
+                <h1 class="text-5xl">Amount</h1>
+                <h1 class="text-3xl mt-4 font-bold">$<span id="totalAmount">1250</span></h1>
+            </div>
+        </div>
+        <div class="grid grid-cols-2 w-3/4 mx-auto mt-7 ">
+            <div>
+                <input type=" email" name="inputDeposite" id="inputDeposite" placeholder="$deposite amount"
+                    class="border w-3/5 mb-3 px-6 py-2 d-block bg-green-300"><br>
+                <button id="depositeBtn" class="border px-3 py-1 rounded bg-green-100">Deposit</button>
+            </div>
+            <div>
+                <input type=" email" name="inputWithdraw" id="inputWithdraw" placeholder="$deposite amount"
+                    class="border w-3/5 mb-3 px-6 py-2 d-block bg-yellow-300"><br>
+                <button id="withdrawBtn" class="border px-3 py-1 rounded bg-green-100">Withdraw</button>
+            </div>
+        </div>
+    </section>
+    <script src="javascript/checkBanking.js"></script>
+
+
+</body>
+
+</html>
